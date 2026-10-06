@@ -5,3 +5,4 @@ node_modules
 www
 logo_square.png
 logo_square_temp.png
+build-output/
