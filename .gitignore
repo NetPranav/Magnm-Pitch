@@ -2,3 +2,6 @@
 node_modules
 .vercel
 .env*
+www
+logo_square.png
+logo_square_temp.png

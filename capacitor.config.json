@@ -1,0 +1,18 @@
+{
+  "appId": "app.magnm.planner",
+  "appName": "magnm Planner",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "StatusBar": {
+      "overlaysWebView": false,
+      "style": "LIGHT",
+      "backgroundColor": "#ffffff"
+    }
+  },
+  "android": {
+    "allowMixedContent": true
+  }
+}

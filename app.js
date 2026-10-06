@@ -208,7 +208,22 @@ function downloadPdf() {
     doc.setFont("helvetica", "normal"); doc.setFontSize(10); doc.setTextColor(40);
     doc.splitTextToSize(nt, W - 2 * M).forEach(function (ln) { need(5.5); doc.text(ln, M, y); y += 5; });
   }
-  doc.save("magnm-plan" + (biz ? "-" + biz.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") : "") + ".pdf");
+  var fname = "magnm-plan" + (biz ? "-" + biz.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") : "") + ".pdf";
+
+  // Native Android app bridge
+  if (window.AndroidBridge && typeof window.AndroidBridge.saveAndOpenPdf === "function") {
+    try {
+      var dataUri = doc.output("datauristring");
+      window.AndroidBridge.saveAndOpenPdf(dataUri, fname);
+      st.textContent = "Your plan PDF has been generated and opened.";
+      return;
+    } catch (e) {
+      console.warn("AndroidBridge save failed, falling back to browser save", e);
+    }
+  }
+
+  // Browser download fallback
+  doc.save(fname);
   st.textContent = "Your plan was downloaded as a PDF.";
 }
 

@@ -1,0 +1,28 @@
+{
+  "name": "magnmquotation",
+  "version": "1.0.0",
+  "description": "A clean white, mobile-first planner where a client ticks the website, app and backend features they need and sees the price update live. Options that depend on others are ticked automatically (for example, any login ticks the database). The client can download their choices as a simple PDF.",
+  "main": "app.js",
+  "scripts": {
+    "build": "mkdir -p www/vendor && cp index.html style.css app.js logo.png www/ && cp vendor/jspdf.umd.min.js www/vendor/",
+    "sync": "npm run build && npx cap sync android"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NetPranav/Magnm-Pitch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NetPranav/Magnm-Pitch/issues"
+  },
+  "homepage": "https://github.com/NetPranav/Magnm-Pitch#readme",
+  "dependencies": {
+    "@capacitor/android": "^8.5.2",
+    "@capacitor/cli": "^8.5.2",
+    "@capacitor/core": "^8.5.2",
+    "@capacitor/status-bar": "^8.0.4"
+  }
+}
