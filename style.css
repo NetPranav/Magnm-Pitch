@@ -145,3 +145,6 @@ h2.big { font-size: clamp(44px, 12vw, 76px); line-height: .98; letter-spacing: -
   .sumbody, .sum header { padding-inline: 28px; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } html { scroll-behavior: auto; } }
+
+.notice { padding: 12px 14px; background: var(--tint-2); border-radius: 10px; color: var(--fg); }
+.notice[hidden] { display: none; }
