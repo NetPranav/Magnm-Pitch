@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>magnm Build Planner</title>
+  <meta name="description" content="Tick the website, app and backend features you need and see your price instantly. Download your plan as a PDF.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav" aria-label="Pages">
+  <div class="wrap">
+    <button type="button" data-go="p1" aria-current="true"><i>1</i> About</button>
+    <button type="button" data-go="p2"><i>2</i> Website</button>
+    <button type="button" data-go="p3"><i>3</i> App</button>
+    <button type="button" data-go="p4"><i>4</i> Backend</button>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <!-- PAGE 1 -->
+  <section class="sheet" id="p1">
+    <div class="pageno"><span>Page 1 of 4</span><span>Build planner</span></div>
+    <h1 class="mark">magnm</h1>
+    <p class="lead">A student-led development team from India. We build websites, mobile apps, drone and AI software. Design your own service platform here and watch the price as you tick.</p>
+
+    <dl class="who">
+      <div><dt>What we do</dt><dd>Websites, Android and iPhone apps, backend systems</dd></div>
+      <div><dt>Portfolio</dt><dd><a href="https://magnm-org.vercel.app" target="_blank" rel="noopener">magnm-org.vercel.app</a></dd></div>
+      <div><dt>This plan</dt><dd>An Urban Company-style booking platform for your local business</dd></div>
+    </dl>
+
+    <div class="block">
+      <h2>What an Urban-style platform does</h2>
+      <p class="sub">Three kinds of people use it. Each gets their own screens.</p>
+      <div class="roles">
+        <div class="role"><span class="label">Customer</span>
+          <ol><li>Browse services and prices</li><li>Pick a date and a time slot</li><li>Pay online or in cash</li><li>Track the job, then rate it</li></ol></div>
+        <div class="role"><span class="label">Service provider</span>
+          <ol><li>Get a job request</li><li>Accept or reject it</li><li>Mark the job done</li><li>Get paid after your commission</li></ol></div>
+        <div class="role"><span class="label">You, the owner</span>
+          <ol><li>Add services and set prices</li><li>See every booking</li><li>Manage your providers</li><li>Track earnings and fees</li></ol></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>How your website gets built</h2>
+      <ol class="steps">
+        <li><b>01</b><span>You tick what you need</span><span class="t">Day 1</span><small>Pages 2 to 4. The price updates as you go.</small></li>
+        <li><b>02</b><span>We share the design screens</span><span class="t">Week 1</span><small>Clean white style or your own brand. You approve before we build.</small></li>
+        <li><b>03</b><span>We build and you test</span><span class="t">Weeks 2 to 4</span><small>You get a live link to try on your own phone.</small></li>
+        <li><b>04</b><span>Launch and handover</span><span class="t">Week 5</span><small>Your domain goes live and we show you how to run it.</small></li>
+      </ol>
+      <p class="hint">Timelines are typical for a website. An app adds about 4 to 6 weeks.</p>
+    </div>
+
+    <div class="block">
+      <h2>How you pay</h2>
+      <div class="pay">
+        <div><b>40%</b><span>to start</span></div>
+        <div><b>30%</b><span>at demo</span></div>
+        <div><b>30%</b><span>at launch</span></div>
+      </div>
+      <p class="hint">Domain, hosting, SMS and app store fees are paid by you at actual cost. They are not in the prices below.</p>
+    </div>
+  </section>
+
+  <!-- PAGE 2 -->
+  <section class="sheet" id="p2">
+    <div class="pageno"><span>Page 2 of 4</span><span>Website</span></div>
+    <h2 class="big">Your website</h2>
+    <p class="lead">Tap to tick. Some options need others. We tick those for you and mark them <em>Included</em>.</p>
+
+    <div class="group"><div class="label"><span>Look and feel</span></div>
+      <div class="items" data-render="w_front,w_anim,w_lang,w_gallery"></div></div>
+    <div class="group"><div class="label"><span>Booking and shopping</span></div>
+      <div class="items" data-render="w_book,w_shop,w_account,w_search,w_coupon"></div></div>
+    <div class="group"><div class="label"><span>Trust and growth</span></div>
+      <div class="items" data-render="w_reviews,w_seo,w_blog,w_faq,w_map,w_wa"></div></div>
+    <div class="group"><div class="label"><span>Customer sign-in</span><span>shared with the app</span></div>
+      <div class="items" data-render="b_google,b_email,b_otp"></div>
+      <p class="hint">Any sign-in method needs a database. We add it automatically.</p></div>
+  </section>
+
+  <!-- PAGE 3 -->
+  <section class="sheet" id="p3">
+    <div class="pageno"><span>Page 3 of 4</span><span>Mobile app</span></div>
+    <h2 class="big">Your mobile app</h2>
+    <p class="lead">One app for customers and one for your providers. Both use the same backend as the website, so you never pay for it twice.</p>
+
+    <div class="group"><div class="label"><span>The apps</span></div>
+      <div class="items" data-render="a_base,a_prov,a_ios,a_store"></div></div>
+    <div class="group"><div class="label"><span>Booking and payments</span></div>
+      <div class="items" data-render="a_book,a_pay,a_live,a_addr,a_rate"></div></div>
+    <div class="group"><div class="label"><span>Polish and reach</span></div>
+      <div class="items" data-render="a_login,a_push,a_hi,a_share,a_support,a_splash"></div></div>
+    <p class="hint">An app always needs the database from page 4. We tick it for you.</p>
+  </section>
+
+  <!-- PAGE 4 -->
+  <section class="sheet" id="p4">
+    <div class="pageno"><span>Page 4 of 4</span><span>Backend</span></div>
+    <h2 class="big">Behind the scenes</h2>
+    <p class="lead">The backend is the part your customers never see. It stores bookings, logs people in and takes payments. We build it once and the website and the app both use it.</p>
+
+    <div class="group"><div class="label"><span>Core</span></div>
+      <div class="items" data-render="b_db,b_google,b_email,b_otp,b_files,b_backup"></div></div>
+    <div class="group"><div class="label"><span>Money and running the business</span></div>
+      <div class="items" data-render="b_pay,b_admin,b_commission,b_coupon,b_reviews,b_notif"></div></div>
+
+    <div class="sum" id="summary">
+      <header><span class="label">Your plan</span><span class="label" id="count">0 items</span></header>
+      <div class="sumbody">
+        <div id="sumlines"></div>
+        <div class="totalrow"><span class="label">Total</span><b id="total">₹0</b></div>
+        <p class="fine">Payable as 40% to start, 30% at demo, 30% at launch. Domain, hosting, SMS and store fees are extra at actual cost.</p>
+        <form class="form" id="form" autocomplete="off">
+          <label><span class="label">Your name</span><input id="f-name" type="text" placeholder="Name"></label>
+          <label><span class="label">Business</span><input id="f-biz" type="text" placeholder="Business name"></label>
+          <label class="full"><span class="label">Phone</span><input id="f-phone" type="tel" inputmode="tel" placeholder="Phone number"></label>
+          <label class="full"><span class="label">Anything else</span><textarea id="f-note" rows="3" placeholder="Services you offer, deadline, questions"></textarea></label>
+          <button class="btn full" id="pdf" type="submit">Download my plan as PDF</button>
+          <p class="status full" id="status" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="bar">
+  <div class="wrap">
+    <div><small>Your total</small><b id="bartotal">₹0</b></div>
+    <button type="button" id="seeplan">See my plan</button>
+  </div>
+</div>
+
+<script src="vendor/jspdf.umd.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
