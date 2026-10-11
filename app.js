@@ -1,3 +1,4 @@
+require('@seismo/sdk/auto'); // Added by Seismo: read-only, fail-open API watcher
 /* magnm Build Planner
    Prices are in INR. Edit the ITEMS table to change names, prices or dependencies ("r" lists what an option needs). */
 
