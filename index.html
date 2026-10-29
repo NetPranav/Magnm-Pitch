@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>magnm Build Planner</title>
-  <meta name="description" content="Tick the website, app and backend features you need and see your price instantly. Download your plan as a PDF.">
+  <title id="doc-title">magnm Software Cost Planner</title>
+  <meta name="description" content="Configure modern software, web platforms, mobile apps, backend systems, AI and cloud infrastructure. Get an instant transparent quotation and PDF.">
   <meta name="theme-color" content="#ffffff">
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="apple-touch-icon" href="logo.png">
@@ -15,51 +15,58 @@
 </head>
 <body>
 
-<nav class="nav" aria-label="Pages">
+<!-- Client Proposal Banner -->
+<aside id="client-banner" class="client-banner" hidden>
+  <div class="wrap">
+    <div>
+      <span class="banner-badge">Client Proposal</span>
+      <span id="banner-text"><strong>Custom Client Proposal</strong></span>
+    </div>
+    <div class="banner-links">
+      <a href="/" id="banner-general-link">Standard Software Planner</a>
+      <a href="/admin" id="banner-admin-link">Proposal Admin</a>
+    </div>
+  </div>
+</aside>
+
+<!-- Top Navigation -->
+<nav class="nav" id="main-nav" aria-label="Pages">
   <div class="wrap">
     <button type="button" data-go="p1" aria-current="true"><i>1</i> About</button>
-    <button type="button" data-go="p2"><i>2</i> Website</button>
-    <button type="button" data-go="p3"><i>3</i> App</button>
+    <button type="button" data-go="p2"><i>2</i> Web & SaaS</button>
+    <button type="button" data-go="p3"><i>3</i> Mobile App</button>
     <button type="button" data-go="p4"><i>4</i> Backend</button>
+    <button type="button" data-go="p5"><i>5</i> AI & Ops</button>
   </div>
 </nav>
 
-<main class="wrap">
+<!-- Main Planner View -->
+<main class="wrap" id="planner-view">
 
-  <!-- PAGE 1 -->
+  <!-- PAGE 1: About & Capabilities -->
   <section class="sheet" id="p1">
-    <div class="pageno"><span>Page 1 of 4</span><span>Build planner</span></div>
+    <div class="pageno"><span>Page 1 of 5</span><span id="p1-subtitle">Software Planner</span></div>
     <h1 class="mark">magnm</h1>
-    <p class="lead">A student-led development team from India. We build websites, mobile apps, drone and AI software. Design your own service platform here and watch the price as you tick.</p>
+    <p class="lead" id="hero-lead">A student-led development team from India. We build modern web platforms, mobile apps, SaaS, AI integrations, and cloud backend systems. Configure your software stack and get an instant quotation.</p>
 
     <dl class="who">
-      <div><dt>What we do</dt><dd>Websites, Android and iPhone apps, backend systems</dd></div>
+      <div><dt>What we do</dt><dd id="hero-what">Full-Stack Web & SaaS, Mobile Apps (iOS/Android), Cloud Backend & APIs, AI & Automation</dd></div>
       <div><dt>Portfolio</dt><dd><a href="https://magnm-org.vercel.app" target="_blank" rel="noopener">magnm-org.vercel.app</a></dd></div>
-      <div><dt>This plan</dt><dd>An Urban Company-style booking platform for your local business</dd></div>
+      <div><dt>This plan</dt><dd id="hero-plan">Custom software & product development tailored to your requirements</dd></div>
     </dl>
 
-    <div class="block">
-      <h2>What an Urban-style platform does</h2>
-      <p class="sub">Three kinds of people use it. Each gets their own screens.</p>
-      <div class="roles">
-        <div class="role"><span class="label">Customer</span>
-          <ol><li>Browse services and prices</li><li>Pick a date and a time slot</li><li>Pay online or in cash</li><li>Track the job, then rate it</li></ol></div>
-        <div class="role"><span class="label">Service provider</span>
-          <ol><li>Get a job request</li><li>Accept or reject it</li><li>Mark the job done</li><li>Get paid after your commission</li></ol></div>
-        <div class="role"><span class="label">You, the owner</span>
-          <ol><li>Add services and set prices</li><li>See every booking</li><li>Manage your providers</li><li>Track earnings and fees</li></ol></div>
-      </div>
-    </div>
+    <!-- Dynamic Architecture / Roles Block -->
+    <div id="architecture-block-container"></div>
 
     <div class="block">
-      <h2>How your website gets built</h2>
+      <h2>How your software gets built</h2>
       <ol class="steps">
-        <li><b>01</b><span>You tick what you need</span><span class="t">Day 1</span><small>Pages 2 to 4. The price updates as you go.</small></li>
-        <li><b>02</b><span>We share the design screens</span><span class="t">Week 1</span><small>Clean white style or your own brand. You approve before we build.</small></li>
-        <li><b>03</b><span>We build and you test</span><span class="t">Weeks 2 to 4</span><small>You get a live link to try on your own phone.</small></li>
-        <li><b>04</b><span>Launch and handover</span><span class="t">Week 5</span><small>Your domain goes live and we show you how to run it.</small></li>
+        <li><b>01</b><span>Scope & Cost Estimation</span><span class="t">Day 1</span><small>Configure components across web, mobile, backend, AI and DevOps. The price calculates live.</small></li>
+        <li><b>02</b><span>Architecture & UI/UX Screens</span><span class="t">Week 1</span><small>We wireframe user flows and share interactive Figma prototypes for your approval before development.</small></li>
+        <li><b>03</b><span>Sprint Development & QA Testing</span><span class="t">Weeks 2 to 6</span><small>Bi-weekly progress demos on staging environments with continuous integration and testing.</small></li>
+        <li><b>04</b><span>Cloud Deployment & Handover</span><span class="t">Final Week</span><small>Production launch on your domain, app store submissions, complete source code handover, and docs.</small></li>
       </ol>
-      <p class="hint">Timelines are typical for a website. An app adds about 4 to 6 weeks.</p>
+      <p class="hint">Delivery timelines depend on scope. A web application typically takes 3 to 5 weeks; native mobile apps add 3 to 4 weeks.</p>
     </div>
 
     <div class="block">
@@ -69,54 +76,44 @@
         <div><b>30%</b><span>at demo</span></div>
         <div><b>30%</b><span>at launch</span></div>
       </div>
-      <p class="hint">Domain, hosting, SMS and app store fees are paid by you at actual cost. They are not in the prices below.</p>
+      <p class="hint">Third-party infrastructure (domain, cloud hosting, SMS credits, and Play/App Store developer licenses) are paid at actual cost directly to providers.</p>
     </div>
   </section>
 
-  <!-- PAGE 2 -->
+  <!-- PAGE 2: Web & SaaS -->
   <section class="sheet" id="p2">
-    <div class="pageno"><span>Page 2 of 4</span><span>Website</span></div>
-    <h2 class="big">Your website</h2>
-    <p class="lead">Tap to tick. Some options need others. We tick those for you and mark them <em>Included</em>.</p>
-
-    <div class="group"><div class="label"><span>Look and feel</span></div>
-      <div class="items" data-render="w_front,w_anim,w_lang,w_gallery"></div></div>
-    <div class="group"><div class="label"><span>Booking and shopping</span></div>
-      <div class="items" data-render="w_book,w_shop,w_account,w_search,w_coupon"></div></div>
-    <div class="group"><div class="label"><span>Trust and growth</span></div>
-      <div class="items" data-render="w_reviews,w_seo,w_blog,w_faq,w_map,w_wa"></div></div>
-    <div class="group"><div class="label"><span>Customer sign-in</span><span>shared with the app</span></div>
-      <div class="items" data-render="b_google,b_email,b_otp"></div>
-      <p class="hint">Any sign-in method needs a database. We add it automatically.</p></div>
+    <div class="pageno"><span>Page 2 of 5</span><span>Web & SaaS</span></div>
+    <h2 class="big">Web & SaaS application</h2>
+    <p class="lead">Select your frontend architecture, core features, and user capabilities. Dependent infrastructure components are marked <em>Included</em> automatically.</p>
+    <div id="p2-groups"></div>
   </section>
 
-  <!-- PAGE 3 -->
+  <!-- PAGE 3: Mobile Apps -->
   <section class="sheet" id="p3">
-    <div class="pageno"><span>Page 3 of 4</span><span>Mobile app</span></div>
-    <h2 class="big">Your mobile app</h2>
-    <p class="lead">One app for customers and one for your providers. Both use the same backend as the website, so you never pay for it twice.</p>
-
-    <div class="group"><div class="label"><span>The apps</span></div>
-      <div class="items" data-render="a_base,a_prov,a_ios,a_store"></div></div>
-    <div class="group"><div class="label"><span>Booking and payments</span></div>
-      <div class="items" data-render="a_book,a_pay,a_live,a_addr,a_rate"></div></div>
-    <div class="group"><div class="label"><span>Polish and reach</span></div>
-      <div class="items" data-render="a_login,a_push,a_hi,a_share,a_support,a_splash"></div></div>
-    <p class="hint">An app always needs the database from page 4. We tick it for you.</p>
-    <p class="hint notice" id="appnote" hidden>No website ticked, so the app carries the shared setup work and adds <b>₹4,000</b>. Add any website option on page 2 to remove it.</p>
+    <div class="pageno"><span>Page 3 of 5</span><span>Mobile app</span></div>
+    <h2 class="big">Mobile applications</h2>
+    <p class="lead">Cross-platform iOS and Android apps powered by high-performance codebases sharing backend APIs with your web platform.</p>
+    <div id="p3-groups"></div>
+    <p class="hint">A mobile app requires an API backend and database from Page 4. We tick it for you automatically.</p>
+    <p class="hint notice" id="appnote" hidden>No web frontend selected, so the mobile app carries standalone API configuration and environment setup (+<b>₹4,000</b>). Select any web option on Page 2 to waive it.</p>
   </section>
 
-  <!-- PAGE 4 -->
+  <!-- PAGE 4: Backend & Cloud -->
   <section class="sheet" id="p4">
-    <div class="pageno"><span>Page 4 of 4</span><span>Backend</span></div>
-    <h2 class="big">Behind the scenes</h2>
-    <p class="lead">The backend is the part your customers never see. It stores bookings, logs people in and takes payments. We build it once and the website and the app both use it.</p>
+    <div class="pageno"><span>Page 4 of 5</span><span>Backend & APIs</span></div>
+    <h2 class="big">Backend & Cloud architecture</h2>
+    <p class="lead">The secure foundation powering your applications: databases, API services, authentication, storage, and administrative control panels.</p>
+    <div id="p4-groups"></div>
+  </section>
 
-    <div class="group"><div class="label"><span>Core</span></div>
-      <div class="items" data-render="b_db,b_google,b_email,b_otp,b_files,b_backup"></div></div>
-    <div class="group"><div class="label"><span>Money and running the business</span></div>
-      <div class="items" data-render="b_pay,b_admin,b_commission,b_coupon,b_reviews,b_notif"></div></div>
+  <!-- PAGE 5: AI, DevOps & Summary -->
+  <section class="sheet" id="p5">
+    <div class="pageno"><span>Page 5 of 5</span><span>AI & DevOps</span></div>
+    <h2 class="big">AI, Automation & DevOps</h2>
+    <p class="lead">Supercharge your product with intelligent AI integrations, automated deployment pipelines, continuous monitoring, and proactive maintenance.</p>
+    <div id="p5-groups"></div>
 
+    <!-- Summary & Proposal Generator -->
     <div class="sum" id="summary">
       <header><span class="label">Your plan</span><span class="label" id="count">0 items</span></header>
       <div class="sumbody">
@@ -127,8 +124,8 @@
           <label><span class="label">Your name</span><input id="f-name" type="text" placeholder="Name"></label>
           <label><span class="label">Business</span><input id="f-biz" type="text" placeholder="Business name"></label>
           <label class="full"><span class="label">Phone</span><input id="f-phone" type="tel" inputmode="tel" placeholder="Phone number"></label>
-          <label class="full"><span class="label">Anything else</span><textarea id="f-note" rows="3" placeholder="Services you offer, deadline, questions"></textarea></label>
-          <button class="btn full" id="pdf" type="submit">Download my plan as PDF</button>
+          <label class="full"><span class="label">Project Scope & Notes</span><textarea id="f-note" rows="3" placeholder="Key deliverables, deadlines, technical preferences"></textarea></label>
+          <button class="btn full" id="pdf" type="submit">Download proposal as PDF</button>
           <p class="status full" id="status" role="status"></p>
         </form>
       </div>
@@ -137,14 +134,106 @@
 
 </main>
 
-<div class="bar">
+<!-- Admin Management View -->
+<section class="wrap admin-view" id="admin-view" hidden>
+  <div class="admin-header">
+    <div>
+      <div class="pageno"><span>Control Panel</span><span>Proposal Management</span></div>
+      <h2>Client Proposal Manager</h2>
+      <p class="lead">Create and manage client-specific planner routes without modifying the main general planner. Dedicated routes allow custom scopes, pre-selections, and branding.</p>
+    </div>
+    <div class="admin-actions">
+      <button type="button" class="btn-sm" id="btn-new-client">+ New Client Route</button>
+      <a href="/" class="btn-outline" id="btn-back-planner">Back to Planner</a>
+    </div>
+  </div>
+
+  <div id="admin-client-list"></div>
+
+  <!-- Proposal Editor Card -->
+  <div class="admin-form-card" id="admin-editor" hidden>
+    <h3 id="editor-title" style="font-family: var(--f-display); font-size: 26px;">Create Client Proposal Route</h3>
+    <p class="sub">Configure a custom client pitch accessible via a dedicated route.</p>
+
+    <form id="admin-client-form">
+      <div class="admin-form-grid">
+        <label>
+          <span class="label">Route Slug (URL path) *</span>
+          <input type="text" id="cfg-slug" placeholder="e.g. acme-corp" required pattern="[a-z0-9_-]+" title="Lowercase letters, numbers, and hyphens only">
+          <small class="hint" style="margin-top:2px;">Route will be: <code>/clients/<span id="slug-preview">your-slug</span></code></small>
+        </label>
+        <label>
+          <span class="label">Client / Proposal Name *</span>
+          <input type="text" id="cfg-name" placeholder="e.g. Acme Corp On-Demand Platform" required>
+        </label>
+        <label>
+          <span class="label">Target Client Contact</span>
+          <input type="text" id="cfg-client" placeholder="e.g. Rahul Sharma">
+        </label>
+        <label>
+          <span class="label">Target Business / Company</span>
+          <input type="text" id="cfg-biz" placeholder="e.g. Acme Logistics Pvt Ltd">
+        </label>
+        <label class="admin-form-full">
+          <span class="label">Proposal Heading / Headline</span>
+          <input type="text" id="cfg-title" placeholder="e.g. Custom Logistics & Delivery Platform">
+        </label>
+        <label class="admin-form-full">
+          <span class="label">Proposal Subtitle / Intro Lead</span>
+          <textarea id="cfg-lead" rows="2" placeholder="Brief summary tailored to this client's goals"></textarea>
+        </label>
+        <label class="admin-form-full">
+          <span class="label">Specific Deliverables Scope ("This plan")</span>
+          <input type="text" id="cfg-thisplan" placeholder="e.g. Comprehensive B2B logistics tracking and dispatch system">
+        </label>
+        <label class="admin-form-full">
+          <span class="label">Pre-Selected Components for this Client</span>
+          <div class="checkbox-grid" id="cfg-items-checklist"></div>
+        </label>
+      </div>
+
+      <div style="display: flex; gap: 10px; margin-top: 24px; justify-content: flex-end;">
+        <button type="button" class="btn-outline" id="btn-cancel-editor">Cancel</button>
+        <button type="submit" class="btn-sm" style="padding-inline: 24px;">Save Client Route</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Import / Export Section -->
+  <div style="margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line-2);">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px;">
+      <div>
+        <span class="label">Configuration Sync</span>
+        <p class="sub" style="font-size: 14px;">Export or import client route presets in JSON format to share across teammates or commit to git.</p>
+      </div>
+      <div style="display: flex; gap: 8px;">
+        <button type="button" class="btn-outline" id="btn-export-json">Export Presets (JSON)</button>
+        <button type="button" class="btn-outline" id="btn-import-json">Import Presets</button>
+      </div>
+    </div>
+    <div id="json-sync-box" style="margin-top: 16px;" hidden>
+      <textarea id="json-sync-area" rows="6" style="font-family: var(--f-mono); font-size: 12px;"></textarea>
+      <div style="margin-top: 8px; display: flex; gap: 8px;">
+        <button type="button" class="btn-sm" id="btn-apply-import">Apply Import</button>
+        <button type="button" class="btn-outline" id="btn-close-sync">Close</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bottom Fixed Summary Bar -->
+<div class="bar" id="bottom-bar">
   <div class="wrap">
     <div><small>Your total</small><b id="bartotal">₹0</b></div>
     <button type="button" id="seeplan">See my plan</button>
   </div>
 </div>
 
+<!-- Notification Toast -->
+<div id="toast" class="toast" role="alert" aria-live="polite"></div>
+
 <script src="vendor/jspdf.umd.min.js"></script>
+<script src="presets.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
