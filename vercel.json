@@ -1,3 +1,7 @@
 {
-  "outputDirectory": "www"
+  "outputDirectory": "www",
+  "rewrites": [
+    { "source": "/clients/:path*", "destination": "/index.html" },
+    { "source": "/admin", "destination": "/index.html" }
+  ]
 }

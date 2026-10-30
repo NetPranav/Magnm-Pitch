@@ -1,18 +1,24 @@
 {
   "name": "magnmquotation",
   "version": "1.0.0",
-  "description": "A clean white, mobile-first planner where a client ticks the website, app and backend features they need and sees the price update live. Options that depend on others are ticked automatically (for example, any login ticks the database). The client can download their choices as a simple PDF.",
+  "description": "A clean, modern Software Cost Planner & Quotation Engine by magnm. Configurable for web apps, mobile apps, backend systems, AI automation, and cloud DevOps.",
   "main": "app.js",
   "scripts": {
-    "build": "mkdir -p www/vendor && cp index.html style.css app.js logo.png www/ && cp vendor/jspdf.umd.min.js www/vendor/",
-    "sync": "npm run build && npx cap sync android"
+    "build": "mkdir -p www/vendor && cp index.html style.css app.js presets.js logo.png www/ && cp vendor/jspdf.umd.min.js www/vendor/",
+    "sync": "npm run build && npx cap sync android",
+    "check-rules": "node scripts/check-rules.js",
+    "test": "node scripts/check-rules.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NetPranav/Magnm-Pitch.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "software-cost-estimator",
+    "quotation-generator",
+    "cost-planner"
+  ],
+  "author": "magnm",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {

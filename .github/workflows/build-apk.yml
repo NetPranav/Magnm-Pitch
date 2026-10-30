@@ -21,7 +21,10 @@ jobs:
       
       - name: Install dependencies
         run: npm ci
-      
+
+      - name: Verify Anti-Hijacking Rules
+        run: npm test
+
       - name: Prepare web assets
         run: npm run build
 
