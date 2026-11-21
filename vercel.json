@@ -2,6 +2,47 @@
   "outputDirectory": "www",
   "rewrites": [
     { "source": "/clients/:path*", "destination": "/index.html" },
-    { "source": "/admin", "destination": "/index.html" }
+    { "source": "/admin", "destination": "/index.html" },
+    { "source": "/p/:id", "destination": "/share.html" },
+    { "source": "/q/:id", "destination": "/share.html" },
+    { "source": "/f/:id", "destination": "/share.html" }
+  ],
+  "headers": [
+    {
+      "source": "/p/:id",
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" },
+        { "key": "Referrer-Policy", "value": "no-referrer" },
+        { "key": "Cache-Control", "value": "no-store" },
+        { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://fetsrthktatspwucwrwk.supabase.co; object-src 'none'; base-uri 'self'; frame-ancestors 'none'" }
+      ]
+    },
+    {
+      "source": "/q/:id",
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" },
+        { "key": "Referrer-Policy", "value": "no-referrer" },
+        { "key": "Cache-Control", "value": "no-store" },
+        { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://fetsrthktatspwucwrwk.supabase.co; object-src 'none'; base-uri 'self'; frame-ancestors 'none'" }
+      ]
+    },
+    {
+      "source": "/f/:id",
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" },
+        { "key": "Referrer-Policy", "value": "no-referrer" },
+        { "key": "Cache-Control", "value": "no-store" },
+        { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://fetsrthktatspwucwrwk.supabase.co; object-src 'none'; base-uri 'self'; frame-ancestors 'none'" }
+      ]
+    },
+    {
+      "source": "/share.html",
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" },
+        { "key": "Referrer-Policy", "value": "no-referrer" },
+        { "key": "Cache-Control", "value": "no-store" },
+        { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://fetsrthktatspwucwrwk.supabase.co; object-src 'none'; base-uri 'self'; frame-ancestors 'none'" }
+      ]
+    }
   ]
 }

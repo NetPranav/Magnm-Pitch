@@ -4,10 +4,10 @@
   "description": "A clean, modern Software Cost Planner & Quotation Engine by magnm. Configurable for web apps, mobile apps, backend systems, AI automation, and cloud DevOps.",
   "main": "app.js",
   "scripts": {
-    "build": "mkdir -p www/vendor && cp index.html style.css app.js presets.js logo.png www/ && cp vendor/jspdf.umd.min.js www/vendor/",
+    "build": "mkdir -p www/vendor www/host www/share && cp index.html style.css app.js presets.js logo.png www/ && cp vendor/jspdf.umd.min.js www/vendor/ && cp host/magnm-host.js www/host/ && cp share/config.js share/share.js www/share/ && node scripts/build-share.js",
     "sync": "npm run build && npx cap sync android",
     "check-rules": "node scripts/check-rules.js",
-    "test": "node scripts/check-rules.js"
+    "test": "node scripts/check-rules.js && node --test scripts/share.test.js"
   },
   "repository": {
     "type": "git",
