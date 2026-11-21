@@ -178,6 +178,7 @@ h2.big { font-size: clamp(44px, 12vw, 76px); line-height: .98; letter-spacing: -
 .btn { background: var(--fg); color: var(--bg); border: 0; border-radius: 99px; padding: 17px 22px; font-size: 16px; font-weight: 600; cursor: pointer; transition: transform .1s, opacity .2s; text-align: center; text-decoration: none; display: inline-block; }
 .btn:hover { opacity: .88; }
 .btn:active { transform: translateY(1px); }
+.btn:disabled { opacity: .55; cursor: default; }
 .status { font-size: 13px; min-height: 1.4em; color: var(--body); }
 
 /* bottom bar */

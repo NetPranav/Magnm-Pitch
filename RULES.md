@@ -43,6 +43,17 @@ To ensure that the public build planner serves all clients and that no individua
 
 ---
 
+## Share Links (`/p/:id`, `/q/:id`, `/f/:id`)
+
+- Client share links are published from **Magnm Studio** (stored in Supabase and fetched at runtime via `share/share.js` and `host/magnm-host.js`).
+- Three dedicated routes map to `share.html` (never `/`):
+  - `/p/<id>`: Read/present view for a published `proposal`.
+  - `/q/<id>`: Interactive quote form (`proposal` or `default_quote`) with submission back to Studio.
+  - `/f/<id>`: Locked final quotation (`final`) with agreed items, service plans, payment plan, and timeline.
+- All share routes are **not indexed**: `share.html` includes `<meta name="robots" content="noindex,nofollow">`, and `vercel.json` serves `X-Robots-Tag: noindex, nofollow`, `Referrer-Policy: no-referrer`, `Cache-Control: no-store`, and a strict `Content-Security-Policy`.
+
+---
+
 ## 🚀 Quick Reference
 
 | Route | Purpose | Access |
@@ -51,3 +62,6 @@ To ensure that the public build planner serves all clients and that no individua
 | `/clients/urban-company` | Preserved on-demand services platform proposal | Client pitch |
 | `/clients/<slug>` | Dynamic client-tailored proposal | Team & Client |
 | `/admin` | Proposal manager, preset editor, and link generator | Internal team |
+| `/p/<id>` | Published client proposal view (Studio share link) | Client (unindexed) |
+| `/q/<id>` | Published interactive quote form (Studio share link) | Client (unindexed) |
+| `/f/<id>` | Published locked final quotation (Studio share link) | Client (unindexed) |
